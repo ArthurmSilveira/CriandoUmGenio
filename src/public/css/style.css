@@ -1,0 +1,67 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navbar personalizada */
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Cards */
+.card {
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Tabelas */
+.table {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Forms */
+.form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.25rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}

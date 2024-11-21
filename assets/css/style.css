@@ -1,0 +1,95 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Banner Rotativo */
+.carousel-item img {
+    width: 1200px;
+    height: 650px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Formulários */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Botões */
+.btn-primary {
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-outline-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Tabelas */
+.table {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Área de Apoiadores */
+.apoiadores-section {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.sponsor-img {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.sponsor-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 400px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .sponsor-img {
+        margin-bottom: 1rem;
+    }
+}

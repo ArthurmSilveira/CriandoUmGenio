@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="/">Sistema Educacional</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <% if (usuario) { %>
+                    <% if (usuario.tipo === 'admin') { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/dashboard">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/usuarios">Usuários</a>
+                        </li>
+                    <% } else if (usuario.tipo === 'professor') { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/professor/turmas">Turmas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/professor/materiais">Materiais</a>
+                        </li>
+                    <% } else if (usuario.tipo === 'aluno') { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aluno/disciplinas">Disciplinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aluno/notas">Notas</a>
+                        </li>
+                    <% } %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/sair">Sair</a>
+                    </li>
+                <% } else { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/login">Entrar</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
